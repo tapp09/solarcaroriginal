@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <section class="navbar">
+        <nav>
+            <div class="logo">
+                <img src="logo.png"  width="80px"/>
+            </div>
+            <div class="navtools">
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Modelos</a></li>
+                    <li><a href="">Compre Agora</a></li>
+                    <li><a href="">Nossa Marca</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </div>
+            <div class="accounttools">
+                <ul>
+                    <li><a href="">Cadastro</a></li>
+                    <li><a href="">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section class="videohome">
+        <video autoplay loop muted>
+            <source src="pik.mp4" type="video/mp4" />
+        </video>
+        <div class="textvideo">
+            <div class="conj">
+            <div class="textopad">
+                <h2><span>B</span><span>e</span><span>m</span>
+                    <span>V</span><span>i</span><span>n</span><span>d</span><span>o</span></h2>
+            </div>
+            <div class="textoani">
+                <h1></h1>
+            </div></div>
+            
+            <p>
+            </p>
+        </div>
+        
+    </section>
+    <script>
+        var i = 0;
+        var texto =" Ao Futuro";
+        var vel = 250
+        var H1 = document.querySelector('h1')
+
+        function animacaoH1 () {
+            if(i<texto.length){
+                H1.innerHTML += texto.charAt(i)
+                i++
+                setTimeout(animacaoH1, vel)
+            }else {
+               H1.classList.add('sombra') 
+            }
+        }
+        var a = 0;
+        var texto2 =" O futuro chegou e é elétrico - junte-se a nós nessa jornada sustentável.";
+        var velo = 100
+        var P = document.querySelector('p')
+
+        function animacaoH2 () {
+            if(a<texto2.length){
+                P.innerHTML += texto2.charAt(a)
+                a++
+                setTimeout(animacaoH2, velo)
+        
+            }   
+        }
+        animacaoH1()
+        animacaoH2()
+    </script>
+</body>
+</html>
