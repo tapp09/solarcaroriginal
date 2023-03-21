@@ -49,39 +49,34 @@
             
             <p>
             </p>
+            <a class="button_home" href="#">
+                <span class="top-key"></span>
+                <span class="text">Comprar Agora</span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+            </a>
         </div>
-        
     </section>
-    <script>
-        var i = 0;
-        var texto =" Ao Futuro";
-        var vel = 250
-        var H1 = document.querySelector('h1')
+    <section class="invest">
+            <div class="banner">
+                <img src="logo.png" />
+                <img src="logo.png" />
+                <img src="logo.png" />
+                <img src="logo.png" />
+                <img src="logo.png" />
+            </div>
+    </section>
 
-        function animacaoH1 () {
-            if(i<texto.length){
-                H1.innerHTML += texto.charAt(i)
-                i++
-                setTimeout(animacaoH1, vel)
-            }else {
-               H1.classList.add('sombra') 
-            }
-        }
-        var a = 0;
-        var texto2 =" O futuro chegou e é elétrico - junte-se a nós nessa jornada sustentável.";
-        var velo = 100
-        var P = document.querySelector('p')
 
-        function animacaoH2 () {
-            if(a<texto2.length){
-                P.innerHTML += texto2.charAt(a)
-                a++
-                setTimeout(animacaoH2, velo)
-        
-            }   
-        }
-        animacaoH1()
-        animacaoH2()
-    </script>
+
+
+
+
+
+
+
+
+
+    <script src="efeito-home-brilho.js" ></script>
 </body>
 </html>
