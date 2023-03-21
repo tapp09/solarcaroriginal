@@ -28,10 +28,33 @@
             <div class="accounttools">
                 <ul>
                     <li><a href="">Cadastro</a></li>
-                    <li><a href="">Login</a></li>
+                    <li><a onclick="openLoginForm()" class="nav__links caixa__login">Login</a></li>
                 </ul>
             </div>
         </nav>
+        <div id="loginForm" class="modal">
+            <div class="modalcont">
+              <span class="close" onclick="closeLoginForm()">&times;</span>
+              <h2>Login</h2>
+                <form method="get">
+                    <div class="caixa__login-input">
+                        <input type="text" required />
+                        <label>Email</label>
+                    </div>
+                    <div class="caixa__login-input">
+                        <input type="password" required />
+                        <label>Senha</label>
+                    </div>
+                    <a href="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Acessar
+                    </a>
+                </form>
+            </div>
+          </div>
     </section>
     <section class="videohome">
         <video autoplay loop muted>
@@ -57,26 +80,48 @@
             </a>
         </div>
     </section>
-    <section class="invest">
-            <div class="banner">
-                <img src="logo.png" />
-                <img src="logo.png" />
-                <img src="logo.png" />
-                <img src="logo.png" />
-                <img src="logo.png" />
+    <section class="car-home">
+            <div class="two-cars">
+                <div class="car-home1">
+                    <div class="car-home-txt">
+                        <p>BMW I4. Perfomance M, 100% energia solar.</p>
+                        <a href="#">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="car-home2">
+                    <div class="car-home-txt">
+                        <p>Lamborghini Urus. 100% energia solar.</p>
+                        <a href="#">Saiba Mais</a>  
+                        
+                    </div>
+                </div>
             </div>
+    </section>
+    <section class="recomendação">
+        <div class="recomend">
+            <div class="reco-title">
+                <p>BMW do Brasil Recomenda</p>
+            </div>
+            <div class="reco-cars">
+                <div class="carro1">
+                    <img src="carro1.png" width="350px"/>
+                </div>
+                <div class="carro1">
+                    <img src="carro2.png" width="360px"/>
+                </div>
+                <div class="carro1">
+                    <img src="carro3.png" width="380px"/>
+                </div>
+            </div>
+        </div>
+        
     </section>
 
 
 
 
 
-
-
-
-
-
-
     <script src="efeito-home-brilho.js" ></script>
+    <script src="pop.js" ></script>
 </body>
 </html>
