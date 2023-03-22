@@ -1,4 +1,4 @@
-var i = 0;
+        var i = 0;
         var texto =" Ao Futuro";
         var vel = 250
         var H1 = document.querySelector('h1')
