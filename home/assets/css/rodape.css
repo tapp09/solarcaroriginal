@@ -16,35 +16,65 @@
 .rod1 {
     width: 100%;
     flex: 4;
-    background-color: brown;
+    background-color: rgb(14, 14, 14);
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     align-items: center;
+    border-bottom: 0.5px solid rgb(49, 49, 49);
 }
 .rod2 {
     width: 100%;
     flex: 1;
-    background-color: blue;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rod2 .nome {
+    font-size: 13px;
+    font-weight: normal;
+    margin-left: 40px;
+}
+.rod2 .redessociais {
+    width: 250px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .c1 {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     width: 280px;
     height: 100px;
 }
 
+
 .c1-title {
+    width: 100%;
     flex: 1;
     font-weight: 100;
     font-size: 17px;
+    margin-bottom: 15px;
 }
 
 
 .c1-links {
+    width: 100%;
     flex: 2;
     display: flex;
     flex-direction: column;
+}
+
+.c1-links a{
+    margin-bottom: 9px;
+    text-decoration: none;
+    color: rgb(161, 161, 161);
+}
+
+.c1-links a:hover {
+    color: white;
 }
